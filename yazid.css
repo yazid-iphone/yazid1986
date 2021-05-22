@@ -1,33 +1,60 @@
+
 #main{
       background:white;
       Width:100%;
       Font-weight:inherit;
       font-family:Raleway  ,sans-serif;
+
 }
 .title{
-      Display:flex;
-      Justify-content:space-between;
-}
-@media screen and (min-width:500px) and (max-width:800px){
-    .title{
-        Display:block;
+      width:100%;
+      
+      Display:grid;
+      grid-template-columns: 1fr auto auto;
+      Column-gap:1rem;
+     }
+
+@media screen  and (max-width:768px){ 
+    #main{
+          Width:100%; 
   }
+    .title{
+        Display:grid;
+             grid-template-areas: 
+            "Reservia. navi1"
+            "navi navi navi";  
+} 
+.resevia{grid-area:reservia;}
+.navi{grid-area:navi;}
+.navi1{grid-area:navi1;}
+
+.ins{
+   Border-top:none !important;
+   Border-bottom:3px solid #0065FC;
+}
+ .inss{
+Border-bottom:3px solid #F2F2F2;
+
+}
+.navi {display:grid;} 
 }
 .navi{
       Display:flex;
 Align-items:center;
 }
-.navi a{
+.navi a{ 
+      
       Display:flex;
       Align-items:center;
       Justify-content:center;
       Text-decoration:none;
 }
 .ins{
-      Font-weight:inherit;
+      Font-weight:200;
       font-size:20px;
       Color:#0065FC;
-      Margin-right:2rem;
+      Padding-left:2rem;
+      Padding-right:2rem;
       Height:50px;
       Width:100%;
       Border-top:3px solid #0065FC;
@@ -36,10 +63,11 @@ Align-items:center;
       Justify-content:center;
 }
 .inss{
-      Font-weight:inherit;
+      Font-weight:200;
       font-size:20px;
       Color:#000;
-      Margin-right:2rem;
+      Padding-left:2rem;
+      Padding-right:2rem;
       Height:50px;
       Width:100%;
       Justify-content:center;
@@ -50,8 +78,17 @@ Align-items:center;
       Border-top:3px solid #0065FC;
       Color:#0065FC;
 }
+
+.navi1 a {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Text-decoration: none;
+}
 .insss{
-      Font-weight:inherit;
+      Padding-left:2rem;
+      Padding-right:1rem;
+      Font-weight:200;
       font-size:20px;
       Color:#0065FC;
       display:flex;
@@ -72,7 +109,7 @@ Align-items:center;
        Display:block;
 }
 .element01 h1{
-       Font-weight:inherit;
+       Font-weight:600;
        Margin-bottom:0;
        font-size:24px;
        font-family:Raleway  ,sans-serif;
@@ -85,35 +122,66 @@ Align-items:center;
         Opacity:0.6;
 }
 .element03{
+        
         Margin-top:0;
         Display:flex;
 }
-input[type="search"]{
-    padding:1rem;
-    Text-align:start;
+@media screen  and (max-width:768px){
+    .recherche {
+        Width:80%;
+  }
+     .bouton{
+        Width:51px;
+        Display:flex;
+        flex-direction: column-reverse;
+        Border-radius:1rem;
+}
+     .bouton i{
+        Line-height:3.2rem;
+}
+      .submit{
+        display:none;
+}
+}
+
+
+.recherche input {
+    
+    padding:1.5rem;
+    
     Border:none;
     Outline:none;
     Font-size:1rem;
     Height:30px;
     border-radius:15px 0 0 15px;
 }
-input[type="submit"]{
-    Cursor:pointer; 
-    Height:51px;
-    Width:150px;
-    Position:relative;
-    Left:35px;
-    Border-radius:0 15px 15px 0;
-    Background:#0065FC;
-    Color:white;
-    Font-size:17px;
-    Border:none;
-}
-.maps{
+.bouton{
+       
+      Background:#0065FC;
+      overflow:hidden;
+           } 
+.submit{
+      
+      Line-height:3.2rem;
+      Padding-right:1rem;
+      padding-left:1rem;
+      Cursor:pointer;
+      Font-size:17px;
+      Color:white;
+      
+} 
+.bouton i{
+Color:white;
+Display:flex;
+Align-items:center;
+Justify-content:center;}
+form {
+    
+    overflow:hidden;
+    Display:flex;
     Border:solid 1px #F2F2F2;
     Border-radius:0px 15px 15px 0px;
     Height:51px;
-    Width:370px;
     Border-left:none;
 }
 .png{
@@ -133,18 +201,39 @@ input[type="submit"]{
     Margin-top:2rem;
     margin-bottom: 1rem;
     Display:flex;
-    Flex-wrap:wrap;
+    Column-gap:2rem;
     Align-items:center;
     font-family :Raleway, sans-serif;
 }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen  and (max-width:768px){
     .element04{
-        Display:block;
+        Width:100%;
+        Display:grid;
+        Row-gap:1rem;
+        
   }
+.list1{
+Margin-right:1rem;
+}
+.list2{
+Margin-right:0;}
+.list3{
+Margin:auto;
+Margin-left:0;}
+.list4{
+Margin:auto;
+Margin-left:0;
+
 }
 
+
+}
+.list{
+
+Display:flex;}
+
 .element04 h2{
-    Font-weight:inherit;
+    Font-weight:700;
     Font-size:20px;
     font-family:Raleway  ,sans-serif;    
     Margin-left:0px;
@@ -170,13 +259,13 @@ input[type="submit"]{
     Display:flex;
     Align-items:center;
     Border:solid 2px #d9d9d9;
-    Font-weight:inherit;
+    Font-weight:700;
     font-family:Raleway  ,sans-serif;
     Border-radius:50px;
     Height:3.5rem;
     Font-size:1rem;
-    Padding-right:2rem;
-    Margin-right:2rem;}
+    Padding-right:1rem;
+    Margin-right:1rem;}
 .list1:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
@@ -199,14 +288,14 @@ input[type="submit"]{
     
     Display:flex;
     Align-items:center;
-    
+    Font-weight:700;
     Border:solid 2px #d9d9d9;
     
     Border-radius:50px;
     Height:3.5rem;
     Font-size:1rem;
-    Padding-right:2rem;
-    Margin-right:2rem;}
+    Padding-right:1rem;
+    }
 .list2:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
@@ -229,14 +318,14 @@ input[type="submit"]{
     
     Display:flex;
     Align-items:center;
-    
+    Font-weight:700;
     Border:solid 2px #d9d9d9;
     
     Border-radius:50px;
     Height:3.5rem;
     Font-size:1rem;
-    Padding-right:2rem;
-    Margin-right:2rem;}
+    Padding-right:1rem;
+    }
 .list3:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
@@ -259,14 +348,14 @@ input[type="submit"]{
     
     Display:flex;
     Align-items:center;
-    
+    Font-weight:700;
     Border:solid 2px #d9d9d9;
     
     Border-radius:50px;
     Height:3.5rem;
     Font-size:1rem;
-    Padding-right:2rem;
-    Margin-right:2rem;}
+    Padding-right:1rem;
+    }
 .list4:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
@@ -283,42 +372,54 @@ input[type="submit"]{
     Justify-content:center;
     Padding-bottom:0px;
     Margin-right:10px;
-    Width:2.2rem;
-    Height:2.2rem;
+    Width:2rem;
+    Height:2rem;
     Color:blue;
     Border:solid 1px #d9d9d9;
     Border-radius:50%;}
 #yazid{
+    
     height:100%;
     width:100%;
     display:flex;
     column-gap: 2rem;
 }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (max-width:768px){
     #yazid{
-        Display:block;
+        display: flex;
+    flex-direction: column-reverse;
      Width:100%;
      Height:100%;
   }
+#container{
+     
+}
 }
 #container{
      Width:70%;
      border-radius: 1.5rem;
      Background:#F2F2F2;
 }
-#container h3{
+@media screen and (max-width:768px){
+    #container{
+        Background:white;
+        Width:100%;
+        Height:100%;
+  }
+}#container h3{
      Font-weight:inherit;
      Display:block;
      Margin-left:2rem;
      Font-size:24px;
 }
 #container h8{
-     Font-weight:inherit;
+     Font-size:19px;
+     Font-weight:700;
      Display:block;
      Margin:2rem;
 }
 #conteneur{
-     Background:#F2F2F2;
+     
      Width:100%;
      display: flex;
      flex-wrap: wrap;
@@ -339,11 +440,11 @@ input[type="submit"]{
      Background:white;
      Cursor:pointer;}
 
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (max-width:768px){
     .element{
         
-        Width:100%;
-        Height:100%;
+        Width:90%;
+        Height:70%;
   }
 }
 .element img{
@@ -366,23 +467,25 @@ input[type="submit"]{
        Width:30%;
        Background:#F2F2F2;
        Border-radius:1.5rem;}
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen  and (max-width:768px){
     #yijiao{
      Width:100%;
   }
 }
 .graph{
+     
      Font-size:24px;
      Display:flex;
      Justify-content:space-between;
      Height:60px;
 }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen  and (max-width:768px){
     .graph{
-        Display:block;
-        Height:100%;
-Width:100%;
+        
+        Width:100%;
   }
+#yijiao{
+        Height:680px;}
 }
 .graph h3{
        Font-weight:inherit;
@@ -390,7 +493,7 @@ Width:100%;
        Margin-left:2.5rem;}
 .graph i{
        Margin-right:2rem;
-       Margin-top:2rem;
+       Margin-top:1.5rem;
 }
 .elem11{
        max-width:100%;
@@ -415,9 +518,9 @@ Width:100%;
 }
 .element11 img{
         Object-fit:cover;
-        Width:30%;
+        Width:40%;
 }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (max-width:768px){
     .element11{
         Display:flex;
         Height:150px;
@@ -441,9 +544,19 @@ Width:100%;
         Transform:scale(1.02);
 }
 .wrapper1{
+        
         Margin:4rem 0;
 }
- .wrapper1 h2{
+@media screen and (max-width:768px){
+    .wrapper1{
+        Display:block;
+        Width:100%;
+               }
+    .wrapper1 h2{
+       Margin-left:1rem;}
+      
+  } 
+.wrapper1 h2{
        Font-weight:inherit;
        font-family:Raleway  ,sans-serif;
 }
@@ -454,9 +567,11 @@ Width:100%;
         Grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
         column-gap:2rem;
  }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (max-width:768px){
     .wrapper{
         Display:block;
+        Width:100%;
+      
   }
 }
 .one {
@@ -480,7 +595,18 @@ Width:100%;
         margin-left :24px;
         margin-right: 24px;
         margin-top :19.2px;}
-.two {
+  @media screen and (max-width:768px){
+    .one{
+        Display:block;
+        Width:90%;
+        Margin-left:1rem;
+        Height:200px;
+  }
+   .one img{
+        Height:130px;
+}    
+}
+.two {  
         Cursor:pointer;
         Display:flex;
         Flex-direction:column;
@@ -497,10 +623,20 @@ Width:100%;
         margin-top :19.2px;
 }
 .two img{
+       Width:100%;
        Height:227px;
        object-fit:cover;
 }
-.three {
+ @media screen and (max-width:768px){
+    .two{
+        Display:block;
+        Width:90%;
+        Height:200px;
+        Margin-left:1rem;
+        Margin-top:1rem;}
+ .two img  {height:130px;      
+  }
+}.three {
        Cursor:pointer;
        box-shadow: 0 0 20px #0000002e;
        overflow: hidden;
@@ -515,10 +651,22 @@ Width:100%;
       Height:163px;
 }
 .three p{
+      margin-top:19.2px;
       margin-bottom:19.2px;
       margin-left:24px;
-      margin-right:24px;
-      margin-top:19.2px;}
+      margin-right:24px; 
+}
+ @media screen and (max-width:768px){
+    .three{
+        Display:block;
+        Width:90%;
+        Height:200px;
+        Margin-left:1rem;
+        Margin-top: 1rem;}
+    .three img{
+        Height:130px;
+  }
+}
 .four {
      Cursor:pointer;
      box-shadow: 0 0 20px #0000002e;
@@ -537,6 +685,17 @@ Width:100%;
      margin-left :24px;
      margin-right: 24px;
      margin-top :19.2px;}
+   @media screen and (max-width:768px){
+    .four{
+        Display:block;
+        Width:90%;
+       Height:200px;
+       Margin-top:1rem; 
+       Margin-left:1rem;}
+.four img{
+       Height:130px;
+  }
+}
 .five {
      Cursor:pointer;
      box-shadow: 0 0 20px #0000002e;
@@ -548,6 +707,7 @@ Width:100%;
      grid-row: 2/3;
 }
 .five img{
+   
      Height:163px;
      object-fit:cover;
 }
@@ -555,6 +715,17 @@ Width:100%;
      margin-left :24px;
      margin-right: 24px;
      margin-top :19.2px;
+}
+ @media screen and (max-width:768px){
+    .five{
+        Display:block;
+        Width:90%;
+        Height:200px;
+        Margin-left:1rem;
+        Margin-top: 2rem;}
+.five img{
+        Height:130px;
+  }
 }
 .six {
      Cursor:pointer;
@@ -575,31 +746,50 @@ Width:100%;
      margin-right :24px;
      margin-top :19.2px;
 }
+ @media screen and (max-width:768px){
+    .six{
+        Display:block;
+        Width:90%;
+        Height:200px;
+        Margin-left:1rem;
+        Margin-top:1rem;}
+.six img{
+        height:130px;
+  }
+}
 #footer{
      Width:100%;
      Height:100%;
      Background:#F2F2F2;
 }
 .footer1{
-     Width:70%;
+     Width:100%;
      Display:flex;
-     Margin-left:2rem;
+     Justify-content:space-between;
+
 }
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (max-width:768px){
     .footer1{
         Display:block;
-  }
+        Padding:1rem;
 }
 .element5{
+        Margin-top:3rem;
+
+}
+
+}
+.element5{ 
+      
       Width:100%;
-      Height:100%;
 } 
 .element5 h3{
-      Font-weight:inherit;
+      Font-weight:700;
       Font-size:18:px;     
       font-family:Raleway  ,sans-serif;
 }
 .element5 ul{
+      Font-weight:200;
       list-Style:none;
 }
 .element5 a{
