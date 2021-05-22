@@ -1,10 +1,12 @@
-
+Body{
+margin:0;
+}
 #main{
       background:white;
-      Width:100%;
+      Width:95%;
       Font-weight:inherit;
       font-family:Raleway  ,sans-serif;
-
+      Margin:auto;
 }
 .title{
       width:100%;
@@ -16,7 +18,7 @@
 
 @media screen  and (max-width:768px){ 
     #main{
-          Width:100%; 
+          Width:95%; 
   }
     .title{
         Display:grid;
@@ -50,7 +52,7 @@ Align-items:center;
       Text-decoration:none;
 }
 .ins{
-      Font-weight:200;
+      Font-weight:100;
       font-size:20px;
       Color:#0065FC;
       Padding-left:2rem;
@@ -63,7 +65,7 @@ Align-items:center;
       Justify-content:center;
 }
 .inss{
-      Font-weight:200;
+      Font-weight:100;
       font-size:20px;
       Color:#000;
       Padding-left:2rem;
@@ -88,7 +90,7 @@ Align-items:center;
 .insss{
       Padding-left:2rem;
       Padding-right:1rem;
-      Font-weight:200;
+      Font-weight:100;
       font-size:20px;
       Color:#0065FC;
       display:flex;
@@ -109,9 +111,9 @@ Align-items:center;
        Display:block;
 }
 .element01 h1{
-       Font-weight:600;
+       Font-weight:500;
        Margin-bottom:0;
-       font-size:24px;
+       font-size:26px;
        font-family:Raleway  ,sans-serif;
 
        
@@ -201,7 +203,7 @@ form {
     Margin-top:2rem;
     margin-bottom: 1rem;
     Display:flex;
-    Column-gap:2rem;
+    Column-gap:1rem;
     Align-items:center;
     font-family :Raleway, sans-serif;
 }
@@ -780,7 +782,7 @@ Display:flex;}
 
 }
 .element5{ 
-      
+      Padding-left:2rem;
       Width:100%;
 } 
 .element5 h3{
