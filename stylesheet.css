@@ -26,7 +26,7 @@ margin:0;
             "Reservia. navi1"
             "navi navi navi";  
 } 
-.resevia{grid-area:reservia;}
+.Resevia{grid-area:Reservia;}
 .navi{grid-area:navi;}
 .navi1{grid-area:navi1;}
 
@@ -144,6 +144,9 @@ Align-items:center;
       .submit{
         display:none;
 }
+     Form{
+        Width:100%;
+}
 }
 
 
@@ -178,8 +181,7 @@ Display:flex;
 Align-items:center;
 Justify-content:center;}
 form {
-    
-    overflow:hidden;
+       overflow:hidden;
     Display:flex;
     Border:solid 1px #F2F2F2;
     Border-radius:0px 15px 15px 0px;
@@ -390,12 +392,8 @@ Display:flex;}
     #yazid{
         display: flex;
     flex-direction: column-reverse;
-     Width:100%;
-     Height:100%;
-  }
-#container{
      
-}
+  }
 }
 #container{
      Width:70%;
@@ -406,9 +404,10 @@ Display:flex;}
     #container{
         Background:white;
         Width:100%;
-        Height:100%;
+        
   }
-}#container h3{
+}
+#container h3{
      Font-weight:inherit;
      Display:block;
      Margin-left:2rem;
@@ -446,7 +445,7 @@ Display:flex;}
     .element{
         
         Width:90%;
-        Height:70%;
+        
   }
 }
 .element img{
@@ -481,14 +480,7 @@ Display:flex;}
      Justify-content:space-between;
      Height:60px;
 }
-@media screen  and (max-width:768px){
-    .graph{
-        
-        Width:100%;
-  }
-#yijiao{
-        Height:680px;}
-}
+
 .graph h3{
        Font-weight:inherit;
        Font-size:1.5rem;
@@ -498,23 +490,21 @@ Display:flex;}
        Margin-top:1.5rem;
 }
 .elem11{
-       max-width:100%;
+       
        Display:flex;
        Flex-direction:column;
        Row-gap:2rem;
        Margin:1.5rem;
 }
-.wax{
-       Display:block;
-       Margin-left:1rem;
-}
+
 .element11{
-        Box-shadow:0 0 16px #0000002e;Max-width:100%;
+        Box-shadow:0 0 16px #0000002e; 
+       
         Border-radius:1.5rem;
         Background:#fff;
         overflow:hidden;
         Display:flex;
-        width:100%;
+        
         Height:150px;
         Border:5px solid #fff;
 }
@@ -522,12 +512,9 @@ Display:flex;}
         Object-fit:cover;
         Width:40%;
 }
-@media screen and (max-width:768px){
-    .element11{
-        Display:flex;
-        Height:150px;
-        Width:100%;
-  }
+.wax{
+       Display:block;
+       Margin-left:1rem;
 }
 .wax p{
        Font-weight:inherit;
