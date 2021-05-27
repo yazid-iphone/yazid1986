@@ -2,7 +2,7 @@ Body{
 margin:0;
 }
 #main{
-      background:white;
+      Background:;
       Width:95%;
       Font-weight:inherit;
       font-family:Raleway  ,sans-serif;
@@ -15,89 +15,80 @@ margin:0;
       grid-template-columns: 1fr auto auto;
       Column-gap:1rem;
      }
-
-@media screen  and (max-width:768px){ 
-    #main{
-          Width:95%; 
-  }
-    .title{
-        Display:grid;
-             grid-template-areas: 
-            "Reservia. navi1"
-            "navi navi navi";  
-} 
-.Resevia{grid-area:Reservia;}
-.navi{grid-area:navi;}
-.navi1{grid-area:navi1;}
-
-.ins{
-   Border-top:none !important;
-   Border-bottom:3px solid #0065FC;
+.reservia{
+Padding-top:1.5rem;
 }
- .inss{
-Border-bottom:3px solid #F2F2F2;
+ 
 
-}
-.navi {display:grid;} 
-}
 .navi{
-      Display:flex;
-Align-items:center;
-}
-.navi a{ 
-      
       Display:flex;
       Align-items:center;
       Justify-content:center;
+}
+
+.ins a:visited{ 
+      Color:blue;
+      
+}
+.navi a{ 
+      
       Text-decoration:none;
 }
-.ins{
+.ins{ 
+      Padding-top:2rem;
       Font-weight:100;
       font-size:20px;
       Color:#0065FC;
       Padding-left:2rem;
       Padding-right:2rem;
-      Height:50px;
+      Padding-bottom:2rem;
       Width:100%;
       Border-top:3px solid #0065FC;
-      display:flex;
-      Align-items:center;
-      Justify-content:center;
+      
 }
 .inss{
+      Padding-top:2rem;
       Font-weight:100;
       font-size:20px;
-      Color:#000;
+      Color:black;
       Padding-left:2rem;
       Padding-right:2rem;
-      Height:50px;
+      Padding-bottom:2rem;
       Width:100%;
-      Justify-content:center;
-      display:flex;
-      Align-items:center;
+      
 }
 .inss:hover{
       Border-top:3px solid #0065FC;
       Color:#0065FC;
 }
+.inss a:visited{
+   Color:black;
+}
 
-.navi1 a {
-    Display: flex;
+.navi1{
+      Display: flex;
     Align-items: center;
     Justify-content: center;
-    Text-decoration: none;
+}   
+
+.insss a:visited {
+    Color:blue;
+      
+}
+.navi1 a{
+    
+    text-decoration: none;
 }
 .insss{
+      Padding-top:2rem;
       Padding-left:2rem;
-      Padding-right:1rem;
+      Padding-right:2rem;
       Font-weight:100;
       font-size:20px;
       Color:#0065FC;
-      display:flex;
-      Align-items:center;
-      Height:50px;
+      Padding-bottom:2rem;
       Width:100%;
-      Justify-content:center;
+      
 }
 .insss:hover{
       Border-top:3px solid #0065FC;;
@@ -119,86 +110,60 @@ Align-items:center;
        
 }
 .element01 p{
-        Margin-t0p:1rem;
+        Margin-top:1rem;
         font-family: Raleway, sans-serif;
         Opacity:0.6;
 }
-.element03{
-        
-        Margin-top:0;
-        Display:flex;
-}
-@media screen  and (max-width:768px){
-    .recherche {
-        Width:80%;
-  }
-     .bouton{
-        Width:51px;
-        Display:flex;
-        flex-direction: column-reverse;
-        Border-radius:1rem;
-}
-     .bouton i{
-        Line-height:3.2rem;
-}
-      .submit{
-        display:none;
-}
-     Form{
-        Width:100%;
-}
-}
-
-
-.recherche input {
-    
-    padding:1.5rem;
-    
-    Border:none;
-    Outline:none;
-    Font-size:1rem;
-    Height:30px;
-    border-radius:15px 0 0 15px;
-}
-.bouton{
-       
-      Background:#0065FC;
-      overflow:hidden;
-           } 
-.submit{
-      
-      Line-height:3.2rem;
-      Padding-right:1rem;
-      padding-left:1rem;
-      Cursor:pointer;
-      Font-size:17px;
-      Color:white;
-      
-} 
-.bouton i{
-Color:white;
+form{
+Height:51px;
 Display:flex;
-Align-items:center;
-Justify-content:center;}
-form {
-       overflow:hidden;
-    Display:flex;
-    Border:solid 1px #F2F2F2;
-    Border-radius:0px 15px 15px 0px;
-    Height:51px;
-    Border-left:none;
 }
 .png{
     Display:flex;
     Align-items:center;
     Justify-content:center;
-    Border:solid 1px #F2F2F2;
-    Border-right:none;
-    Border-radius:15px 0 0 15px;
+    Border:solid 2px #F2F2F2;
     Background:#F2F2F2;
-    Height:51px;
-    Width:50px;
+    width: 51px;
+    border-radius: 1rem 0 0 1rem;
 } 
+.recherche{
+Padding-top:0.75rem;
+Border:solid 2px #F2F2F2;
+ Padding-left:1rem; 
+ Padding-right:1rem; 
+}
+
+.recherche input {
+   Font-size:17px; 
+  Border:none;
+   outline: none;
+    
+    
+}
+.bouton{
+       Cursor:pointer;
+       Display:flex;
+       Align-items:center;
+       Justify-content:center;
+       Background:#0065FC;
+       Border-Radius:0 1rem 1rem 0;
+     
+           } 
+.submit{
+      Font-size:17px;
+      Display:flex;
+      Padding-left:1rem;
+      Padding-right:1rem;     
+      Color:white;
+      
+} 
+.bouton i{
+Display:none;
+Color:white;
+}
+
+
 .element04{ 
     
     Transation:1s ;
@@ -209,29 +174,7 @@ form {
     Align-items:center;
     font-family :Raleway, sans-serif;
 }
-@media screen  and (max-width:768px){
-    .element04{
-        Width:100%;
-        Display:grid;
-        Row-gap:1rem;
-        
-  }
-.list1{
-Margin-right:1rem;
-}
-.list2{
-Margin-right:0;}
-.list3{
-Margin:auto;
-Margin-left:0;}
-.list4{
-Margin:auto;
-Margin-left:0;
 
-}
-
-
-}
 .list{
 
 Display:flex;}
@@ -388,34 +331,22 @@ Display:flex;}
     display:flex;
     column-gap: 2rem;
 }
-@media screen and (max-width:768px){
-    #yazid{
-        display: flex;
-    flex-direction: column-reverse;
-     
-  }
-}
+
 #container{
      Width:70%;
      border-radius: 1.5rem;
      Background:#F2F2F2;
 }
-@media screen and (max-width:768px){
-    #container{
-        Background:white;
-        Width:100%;
-        
-  }
-}
+
 #container h3{
      Font-weight:inherit;
      Display:block;
      Margin-left:2rem;
      Font-size:24px;
 }
-#container h8{
+#container h3{
      Font-size:19px;
-     Font-weight:700;
+     Font-weight:500;
      Display:block;
      Margin:2rem;
 }
@@ -441,13 +372,7 @@ Display:flex;}
      Background:white;
      Cursor:pointer;}
 
-@media screen and (max-width:768px){
-    .element{
-        
-        Width:90%;
-        
-  }
-}
+
 .element img{
       Height:8rem;
       Max-height:100%;
@@ -468,11 +393,7 @@ Display:flex;}
        Width:30%;
        Background:#F2F2F2;
        Border-radius:1.5rem;}
-@media screen  and (max-width:768px){
-    #yijiao{
-     Width:100%;
-  }
-}
+
 .graph{
      
      Font-size:24px;
@@ -538,11 +459,16 @@ Display:flex;}
 }
 @media screen and (max-width:768px){
     .wrapper1{
+        Margin:0;
+        Padding:0 2rem;
         Display:block;
         Width:100%;
                }
     .wrapper1 h2{
        Margin-left:1rem;}
+.wrapper1 h2{
+       Padding-bottom:2rem;
+}
       
   } 
 .wrapper1 h2{
@@ -556,13 +482,7 @@ Display:flex;}
         Grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
         column-gap:2rem;
  }
-@media screen and (max-width:768px){
-    .wrapper{
-        Display:block;
-        Width:100%;
-      
-  }
-}
+
 .one {
       Cursor:pointer;
       box-shadow: 0 0 20px #0000002e;
@@ -578,22 +498,22 @@ Display:flex;}
        Width:100%;
        Height:100%;
        Object-fit:cover;
-}
+       }
 .one p{
-        margin-bottom :19.2px;
+       
         margin-left :24px;
         margin-right: 24px;
-        margin-top :19.2px;}
+        margin-top :24.2px;}
   @media screen and (max-width:768px){
     .one{
-        Display:block;
-        Width:90%;
-        Margin-left:1rem;
-        Height:200px;
+        
+        Width:100%;
+        
+        Margin-auto:1rem;
+        
   }
-   .one img{
-        Height:130px;
-}    
+   .one img{ 
+ Height:140px;}
 }
 .two {  
         Cursor:pointer;
@@ -606,24 +526,24 @@ Display:flex;}
         grid-row: 2/5;
 } 
 .two p{
-        margin-bottom :19.2px;
+       
         margin-left :24px;
         margin-right :24px;
-        margin-top :19.2px;
+        margin-top :24.2px;
 }
 .two img{
        Width:100%;
-       Height:227px;
+       Height:230px;
        object-fit:cover;
 }
  @media screen and (max-width:768px){
     .two{
-        Display:block;
-        Width:90%;
-        Height:200px;
-        Margin-left:1rem;
+        
+        Width:100%;
+        
+        
         Margin-top:1rem;}
- .two img  {height:130px;      
+ .two img  {height:140px;      
   }
 }.three {
        Cursor:pointer;
@@ -637,23 +557,23 @@ Display:flex;}
 }
 .three img{
       object-fit:cover;
-      Height:163px;
+      Height:166px;
 }
 .three p{
-      margin-top:19.2px;
-      margin-bottom:19.2px;
+      margin-top:24.2px;
+      
       margin-left:24px;
       margin-right:24px; 
 }
  @media screen and (max-width:768px){
     .three{
-        Display:block;
-        Width:90%;
-        Height:200px;
-        Margin-left:1rem;
+        
+        Width:100%;
+        
+        
         Margin-top: 1rem;}
     .three img{
-        Height:130px;
+        Height:140px;
   }
 }
 .four {
@@ -670,19 +590,19 @@ Display:flex;}
      object-fit:cover;
 }
 .four p{
-     margin-bottom :19.2px;
+     
      margin-left :24px;
      margin-right: 24px;
-     margin-top :19.2px;}
+     margin-top :24.2px;}
    @media screen and (max-width:768px){
     .four{
-        Display:block;
-        Width:90%;
-       Height:200px;
+        
+        Width:100%;
+       
        Margin-top:1rem; 
-       Margin-left:1rem;}
+       }
 .four img{
-       Height:130px;
+       Height:140px;
   }
 }
 .five {
@@ -697,23 +617,23 @@ Display:flex;}
 }
 .five img{
    
-     Height:163px;
+     Height:166px;
      object-fit:cover;
 }
-.five p{margin-bottom :19.2px;
+.five p{
      margin-left :24px;
      margin-right: 24px;
-     margin-top :19.2px;
+     margin-top :24.2px;
 }
  @media screen and (max-width:768px){
     .five{
-        Display:block;
-        Width:90%;
-        Height:200px;
-        Margin-left:1rem;
-        Margin-top: 2rem;}
+        
+        Width:100%;
+        
+        
+        Margin-top: 1rem;}
 .five img{
-        Height:130px;
+        Height:140px;
   }
 }
 .six {
@@ -730,20 +650,20 @@ Display:flex;}
      Object-fit:cover;
 }
 .six p{
-     margin-bottom :19.2px;
+     
      margin-left :24px;
      margin-right :24px;
-     margin-top :19.2px;
+     margin-top :24.2px;
 }
  @media screen and (max-width:768px){
     .six{
-        Display:block;
-        Width:90%;
-        Height:200px;
-        Margin-left:1rem;
+        
+        Width:100%;
+      
+       
         Margin-top:1rem;}
 .six img{
-        height:130px;
+        height:140px;
   }
 }
 #footer{
@@ -757,17 +677,7 @@ Display:flex;}
      Justify-content:space-between;
 
 }
-@media screen and (max-width:768px){
-    .footer1{
-        Display:block;
-        Padding:1rem;
-}
-.element5{
-        Margin-top:3rem;
 
-}
-
-}
 .element5{ 
       Padding-left:2rem;
       Width:100%;
@@ -791,4 +701,127 @@ Display:flex;}
 }
 .element5 a:hover{
     text-decoration:underline;
+}
+@media screen  and (max-width:768px){ 
+    #main{
+           
+        Width:100%;
+  }
+    .title{
+             Width:100%;
+             Padding:0 2rem;
+             Display:grid;
+             grid-template-areas: 
+            "Reservia. navi1"
+            "navi navi navi";  
+} 
+.Resevia{grid-area:Reservia;}
+.navi{grid-area:navi;}
+.navi1{grid-area:navi1;}
+#head{
+      Padding:2rem;
+      max-Width:100%;
+}
+
+.ins{
+   Border-top:none !important;
+   Border-bottom:3px solid #0065FC;
+}
+ .inss{
+Border-bottom:3px solid #F2F2F2;}
+}
+@media screen  and (max-width:768px)
+{
+    .recherche {
+         border-right:none;
+        
+  }
+     .bouton{
+        Margin-left:-10px;
+        Width:51px;
+        Border-radius:1rem 1rem 1rem 1rem;
+}
+     .bouton i{
+        Display:flex;
+}
+      .submit{
+        display:none;
+}
+     Form{
+        Width:100%;
+}
+}
+@media screen  and (max-width:768px){
+    .element04{
+        Width:100%;
+        Display:grid;
+        Row-gap:1rem;
+        
+  }
+.list1{
+Margin-right:1rem;
+}
+.list2{
+Margin-right:0;}
+.list3{
+Margin:auto;
+Margin-left:0;}
+.list4{
+Margin:auto;
+Margin-left:0;
+}
+}
+@media screen and (max-width:768px){
+    #yazid{
+        display: flex;
+    flex-direction: column-reverse;
+     
+  }
+}
+@media screen and (max-width:768px){
+    #container{
+        Background:white;
+        Width:100%;
+        padding:2rem;
+  }
+}
+@media screen and (max-width:768px){
+    .element{
+        
+        Width:100%;
+        
+  }
+}
+@media screen  and (max-width:768px){
+    #yijiao{
+     Width:100%;
+     Border-radius:0px;
+     Padding:2rem;
+  }
+.elem11{
+      Margin:0;
+}
+.graph{
+      Padding-bottom:2rem;
+}
+}
+@media screen and (max-width:768px){
+    .wrapper{
+        Display:block;
+        Width:100%;
+        
+  }
+}
+@media screen and (max-width:768px){
+    .footer1{
+        Display:block;
+        
+}
+#footer{
+      
+      Margin-top:2rem;
+      Padding:2rem;
+}
+
+
 }

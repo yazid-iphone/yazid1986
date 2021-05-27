@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>yazidprojet2</title>
-<link rel="stylesheet"type="text/css"href="stylesheet.css"/>
+<link rel="stylesheet"type="text/css"href="stylesheet.css">
 <link rel="stylesheet" href="css/all.min.css">
 <link rel="stylesheet" href="css/fontawsome.min.css">
 </head>
@@ -11,14 +11,14 @@
 <div id="main">
        <div class="title">
            <div class="reservia">
-               <img src="Reservia.svg">
+               <img src="Reservia.svg"alt="logo-reservia">
            </div>
               <div class="navi">
-                <a href="#Hebergement"><div class="ins">Hebergment</div></a>
-                <a href="#activites"><div class="inss">Activites</div></a>
+                <div class="ins"><a href="#Hebergement">hebergment</a></div>
+                <div class="inss"><a href="#activites">Activites</a></div>
              </div>
                  <div class="navi1">
-                   <a href="#"><div class="insss">s'inscrire</div></a>            
+                   <div class="insss"> <a href="#"> s'inscrire</a></div>            
                  </div>
        </div>
 <div id="head">
@@ -27,26 +27,29 @@
     <P>En plein centre ville ou en plain nature</P>
 </div>
 <div class="element03">
+<form method="post" action="traitement.php">
 <div class="png">
 <i class="fas fa-map-marker-alt"></i>
 </div>
 
+<div class="recherche"> 
+<input type="text"  value="marseille France">
+</div>
+<div class="bouton">
+<i class=" fas fa-search"></i>
+<div class="submit">Rechercher
+</div>
 
-<form method="post" action="traitement.php">
-<div class="recherche"> <input type="search" placeholder="Marseille,France"/></div>
-<bouton class="bouton">
-<div class="submit">Rechercher</div>
- <i class=" fas fa-search"></i>
-</bouton>
+</div>
 
 </form>
 
 </div>
 
 
-    <div class="element04"><h2>Filtres</h2>
+<div class="element04"><h2>Filtres</h2>
 <div class="list">
-<div class="list1"><i class="fas fa-money-bill-wave"></i><p>Economique</p></p></div>
+<div class="list1"><i class="fas fa-money-bill-wave"></i><p>Economique</p></div>
 <div class="list2"><i class="fas fa-child"></i><p>Familial</P></div>
 </div>
 <div class="list3"><i class="fas fa-heart"></i><p>Romantique</p></div>
@@ -67,7 +70,7 @@
 <div id="conteneur">
 
     <div class="element">
-<img src="0001.jpg"width="100%"height="100%">
+<img src="0001.jpg"width="100%"height="100%"alt="auberge le panier">
 <p><strong>Auberge le panier</strong><br>Nuit a partir de <strong>23$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
@@ -77,8 +80,8 @@
         <span><i class="fas fa-star "></i></span>               
         </div>
 </div>
-    <div class="element"><img src="1111.jpg"width="100%"height="100%">
-<p><strong>Hotel ches amina</strong><br>Nuit a partir de <strong>96$</strong></p>
+    <div class="element"><img src="1111.jpg"width="100%"height="100%"alt="hotel chez Amina">
+<p><strong>Hotel ches amina</strong><br>Nuit a partir de 96<strong>$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -87,7 +90,7 @@
               <i class="fas fa-star "></i>              
 </div>       
 </div>
-    <div class="element"><img src="0005.jpg"width="100%"height="100%">
+    <div class="element"><img src="0005.jpg"width="100%"height="100%"alt="auberge la canneliers">
 <p><strong>Auberge la canneliers</strong><br>Nuit a partir de <strong>90$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
@@ -96,8 +99,8 @@
               <i class="fas fa-star"></i>
         <span><i class="fas fa-star "></i></span>               
             </div></div>
-    <div class="element"><img src="0002.jpg"width="100%"height="100%">
-<p><strong>Hotel du port</strong><br>Nuit a partir de <strong>52$</strong></p>
+    <div class="element"><img src="0002.jpg"width="100%"height="100%"alt="hotel du port">
+<p><strong>Hotel du port</strong><br>Nuit a partir de 52<strong>$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -105,8 +108,8 @@
          <span><i class="fas fa-star"></i>
               <i class="fas fa-star "></i></span>               
             </div></div>
-    <div class="element"><img src="1234.jpg"width="100%"height="100%">
-<p><strong>Auberge de la mer</strong></strong><br>Nuit a partir de <strong>46$</strong></p>
+    <div class="element"><img src="1234.jpg"width="100%"height="100%"alt="auberge de la mer">
+<p><strong>Auberge de la mer</strong><br>Nuit a partir de 46<strong>$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -114,7 +117,8 @@
         <span><i class="fas fa-star"></i>
               <i class="fas fa-star "></i></span>               
        </div></div>
-    <div class="element"><img src="0000.jpg"width="100%"height="100%">
+    <div class="element"><img src="0000.jpg"width="100%"height="100%"alt="auberge
+la canneliere">
 <p> <strong>Auberge la cannebiere</strong><br>Nuit a partir de <strong>25$</strong></p>
 <div class="star2">
               <i class="fas fa-star"></i>
@@ -125,7 +129,7 @@
         </div></div>
     
 </div>
-<h8>Afficher plus</h8>
+<h3>Afficher plus</h3>
 </div>
 <div id="yijiao">
 <div class="graph">
@@ -133,7 +137,7 @@
 <i class="fas fa-chart-line"></i></div>
 <div class="elem11">
     <div class="element11">
-<Img src="1223.jpg"width="100%"height="100%">
+<Img src="1223.jpg"width="100%"height="100%"alt="hotel soleil du matin">
 <div class="wax">
 <p><strong>Hotel soleil du<br>matin <br></strong>nuit a prtir de <strong>128$</strong></p>
 <div class="star1">
@@ -148,7 +152,7 @@
 </div>
     <div class="element11">
 
-<Img src="999.jpg"width="100%"height="100%">
+<Img src="999.jpg"width="100%"height="100%"alt="au coeur de l'eau chambre d'hotes">
 <div class="wax">
 <p><strong>Au coeur de l'eau<br> chambres d'hotes<br></strong>nuit  a prtir de <strong>71$</strong></p>
 <div class="star1">
@@ -163,7 +167,7 @@
 </div>
     <div class="element11"> 
 
-<Img src="2222.jpg"width="100%"height="100%">
+<Img src="2222.jpg"width="100%"height="100%"alt="hotel tout blue et blanc">
 <div class="wax">
 <p><strong>Hotel tout blue et<br> blanc <br></strong>nuit a prtir de <strong>68$</strong></p>
 <div class="star1">
@@ -181,12 +185,12 @@
 <div class="wrapper1">
 <h2 id="activites">Activités à Marseille</h2>
 <div class="wrapper">
-  <div class="one"><img src="123450.jpg"><p>Vieux Port</p></div>
-  <div class="two"><img src="444.jpg"width="100%px"height="100%x"><p>Île du Frioul</p></div>
-  <div class="three"><img src="555.jpg"width="100%"height="100%"><p>Fort de Pomègues</p></div>
-  <div class="four"><img src="789.jpg"width="100%"height="100%"><p>Parc National des Calanques</p></div>
-  <div class="five"><img src="0004.jpg"width="100%"height="100%"><p>Notre-Dame-de-la-Garde</p></div>
-  <div class="six"><img src="888.jpg"width="100%"height="100%"><p>Parc Longchamp</p></div>
+  <div class="one"><img src="123450.jpg"alt="port"><p>Vieux Port</p></div>
+  <div class="two"><img src="444.jpg"width="100%px"height="100%x"alt="ile"><p>Île du Frioul</p></div>
+  <div class="three"><img src="555.jpg"width="100%"height="100%"alt="fort"><p>Fort de Pomègues</p></div>
+  <div class="four"><img src="789.jpg"width="100%"height="100%"alt="parc"><p>Parc National des Calanques</p></div>
+  <div class="five"><img src="0004.jpg"width="100%"height="100%"alt="notre-dame"><p>Notre-Dame-de-la-Garde</p></div>
+  <div class="six"><img src="888.jpg"width="100%"height="100%"alt="Longchamp"><p>Parc Longchamp</p></div>
 </div>
 </div>
 </div>
@@ -198,9 +202,10 @@
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
                     <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>                 <ul> 
-</div>
-    <div class="element5">      
+                    <li><a href="#">Données et confidentialité</a></li> 
+                 </ul>                            
+    </div>
+     <div class="element5">      
                      <h3>Nos hébergements</h3>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
