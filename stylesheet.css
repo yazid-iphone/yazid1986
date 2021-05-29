@@ -1,5 +1,6 @@
 Body{
 margin:0;
+Padding:0;
 }
 #main{
       Background:;
@@ -27,7 +28,7 @@ Padding-top:1.5rem;
 }
 
 .ins a:visited{ 
-      Color:blue;
+      Color:#0065FC;
       
 }
 .navi a{ 
@@ -72,7 +73,7 @@ Padding-top:1.5rem;
 }   
 
 .insss a:visited {
-    Color:blue;
+    Color:#0065FC;
       
 }
 .navi1 a{
@@ -170,14 +171,17 @@ Color:white;
     Margin-top:2rem;
     margin-bottom: 1rem;
     Display:flex;
-    Column-gap:1rem;
+    
     Align-items:center;
     font-family :Raleway, sans-serif;
 }
 
 .list{
-
-Display:flex;}
+Justify-content:space-between;
+Align-items:center;
+Display:flex;
+Width:75%;
+}
 
 .element04 h2{
     Font-weight:700;
@@ -212,7 +216,7 @@ Display:flex;}
     Height:3.5rem;
     Font-size:1rem;
     Padding-right:1rem;
-    Margin-right:1rem;}
+    }
 .list1:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
@@ -438,13 +442,12 @@ Display:flex;}
        Margin-left:1rem;
 }
 .wax p{
-       Font-weight:inherit;
-       Font-size:18px;
-       Margin-top:-1px;
+       Font-weight:500;
+       
 }
 .wax .star1{
        Color:#0065FC;
-       Margin-top:4rem;
+       Margin-top:3rem;
 
 }
 .star1 span{
@@ -457,20 +460,7 @@ Display:flex;}
         
         Margin:4rem 0;
 }
-@media screen and (max-width:768px){
-    .wrapper1{
-        Margin:0;
-        Padding:0 2rem;
-        Display:block;
-        Width:100%;
-               }
-    .wrapper1 h2{
-       Margin-left:1rem;}
-.wrapper1 h2{
-       Padding-bottom:2rem;
-}
-      
-  } 
+
 .wrapper1 h2{
        Font-weight:inherit;
        font-family:Raleway  ,sans-serif;
@@ -495,8 +485,7 @@ Display:flex;}
       Grid-row:2/7;
 }
 .one img{
-       Width:100%;
-       Height:100%;
+       
        Object-fit:cover;
        }
 .one p{
@@ -504,17 +493,7 @@ Display:flex;}
         margin-left :24px;
         margin-right: 24px;
         margin-top :24.2px;}
-  @media screen and (max-width:768px){
-    .one{
-        
-        Width:100%;
-        
-        Margin-auto:1rem;
-        
-  }
-   .one img{ 
- Height:140px;}
-}
+ 
 .two {  
         Cursor:pointer;
         Display:flex;
@@ -536,16 +515,7 @@ Display:flex;}
        Height:230px;
        object-fit:cover;
 }
- @media screen and (max-width:768px){
-    .two{
-        
-        Width:100%;
-        
-        
-        Margin-top:1rem;}
- .two img  {height:140px;      
-  }
-}.three {
+.three {
        Cursor:pointer;
        box-shadow: 0 0 20px #0000002e;
        overflow: hidden;
@@ -565,17 +535,7 @@ Display:flex;}
       margin-left:24px;
       margin-right:24px; 
 }
- @media screen and (max-width:768px){
-    .three{
-        
-        Width:100%;
-        
-        
-        Margin-top: 1rem;}
-    .three img{
-        Height:140px;
-  }
-}
+
 .four {
      Cursor:pointer;
      box-shadow: 0 0 20px #0000002e;
@@ -594,17 +554,7 @@ Display:flex;}
      margin-left :24px;
      margin-right: 24px;
      margin-top :24.2px;}
-   @media screen and (max-width:768px){
-    .four{
-        
-        Width:100%;
-       
-       Margin-top:1rem; 
-       }
-.four img{
-       Height:140px;
-  }
-}
+ 
 .five {
      Cursor:pointer;
      box-shadow: 0 0 20px #0000002e;
@@ -625,17 +575,7 @@ Display:flex;}
      margin-right: 24px;
      margin-top :24.2px;
 }
- @media screen and (max-width:768px){
-    .five{
-        
-        Width:100%;
-        
-        
-        Margin-top: 1rem;}
-.five img{
-        Height:140px;
-  }
-}
+
 .six {
      Cursor:pointer;
      box-shadow: 0 0 20px #0000002e;
@@ -655,17 +595,7 @@ Display:flex;}
      margin-right :24px;
      margin-top :24.2px;
 }
- @media screen and (max-width:768px){
-    .six{
-        
-        Width:100%;
-      
-       
-        Margin-top:1rem;}
-.six img{
-        height:140px;
-  }
-}
+
 #footer{
      Width:100%;
      Height:100%;
@@ -702,14 +632,26 @@ Display:flex;}
 .element5 a:hover{
     text-decoration:underline;
 }
-@media screen  and (max-width:768px){ 
+
+@media screen  and (max-width:1024px){ 
+      #main{
+        padding:0 2rem;  
+        Width:100%;
+  } 
+    .title{
+             Width:100%;
+            
+             Display:grid;
+             Grid-template-columns:1fr auto auto;}  
+} 
+@media screen  and (max-width:766px){ 
     #main{
-           
+        padding:0 2rem;  
         Width:100%;
   }
     .title{
              Width:100%;
-             Padding:0 2rem;
+            
              Display:grid;
              grid-template-areas: 
             "Reservia. navi1"
@@ -719,7 +661,7 @@ Display:flex;}
 .navi{grid-area:navi;}
 .navi1{grid-area:navi1;}
 #head{
-      Padding:2rem;
+      
       max-Width:100%;
 }
 
@@ -754,74 +696,216 @@ Border-bottom:3px solid #F2F2F2;}
 @media screen  and (max-width:768px){
     .element04{
         Width:100%;
-        Display:grid;
-        Row-gap:1rem;
+        Display:block;
+        
         
   }
-.list1{
-Margin-right:1rem;
-}
-.list2{
-Margin-right:0;}
-.list3{
-Margin:auto;
-Margin-left:0;}
-.list4{
-Margin:auto;
-Margin-left:0;
+.list{
+Width:100%;
+Flex-flow:wrap;
+Display:flex;
+row-gap:1rem;
 }
 }
+
 @media screen and (max-width:768px){
     #yazid{
+       
         display: flex;
     flex-direction: column-reverse;
      
   }
 }
+
 @media screen and (max-width:768px){
     #container{
         Background:white;
         Width:100%;
-        padding:2rem;
+        
   }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
+    #conteneur{
+        Column-gap:1rem;
+Row-gap:1rem;}
+    .element{
+        
+        Width:30%;
+        
+  }
+}
+@media screen and (max-width:766px){
     .element{
         
         Width:100%;
         
   }
 }
-@media screen  and (max-width:768px){
+
+@media screen  and (max-width:1024px){
+    #yijiao{
+     Width:100%;
+     Border-radius:16px;
+     
+  }
+
+
+}
+
+@media screen  and (max-width:766px){
     #yijiao{
      Width:100%;
      Border-radius:0px;
-     Padding:2rem;
+     
   }
-.elem11{
-      Margin:0;
+
+
 }
-.graph{
-      Padding-bottom:2rem;
+@media screen and (max-width:1024px){
+    .elem11{
+         Display:flex;
+        Flex-direction:row;
+        Column-gap:1rem;
+        
 }
+.element11{
+   display:flex;
+   Flex-direction:column;
 }
-@media screen and (max-width:768px){
-    .wrapper{
+.element11 img{
+     Width:100%;
+     Height:50%;
+}
+.wax{
+   display:flex;
+   Flex-direction:column;
+}
+.wax p{
+Margin-top:5px;}
+.wax .star1{
+Margin-top:-15px;}
+} 
+@media screen and (max-width:766px){
+    .elem11{
+         Display:flex;
+        Flex-direction:column;
+        
+}
+.element11{
+   display:flex;
+   Flex-direction:row;
+}
+.element11 img{
+     Width:40%;
+    Height:100%;
+}
+.wax{
+   display:flex;
+   Flex-direction:column;
+   row-gap:3rem;
+}
+
+}
+
+@media screen and  (max-width:1024px){
+   .wrapper1{
+        Margin:0;
         Display:block;
         Width:100%;
         
+       
   }
+    .wrapper{
+        Display: flex;
+    Width: 100%;
+    Flex-wrap:wrap;
+    Row-gap: 1rem;
 }
-@media screen and (max-width:768px){
+.wrapper1 h2{Padding:0 0 1rem 1rem;}
+ .one{
+        Width:30%;}
+.one img{
+       Height:140px;}
+.two{
+        Width:30%;}
+.two img{
+       Height:140px;}
+ .three{
+        Width:30%;}
+.three img{
+       Height:140px;} 
+ .four{
+        Width:30%;}
+.four img{
+       Height:140px;}   
+.five{
+        Width:30%;}
+.five img{
+       Height:140px;}
+   .six{
+        Width:30%;}
+.six img{
+        height:140px;}
+}
+ @media screen and (max-width:667px){
+     .wrapper1{
+        Display:block;
+        Width:100%;
+}
+    .wrapper{
+        Row-gap:1rem;
+        Margin:0;
+        display:flex;
+        flex-direction:column;
+        Width:100%;
+}
+.wrapper1 h2
+      {Padding:0 0 1rem 1rem;}
+ .one{
+        Width:100%;}
+.one img{
+       Height:140px;}
+.two{
+        Width:100%;}
+.two img{
+       Height:140px;}
+ .three{
+        Width:100%;}
+.three img{
+       Height:140px;} 
+ .four{
+        Width:100%;}
+.four img{
+       Height:140px;}   
+.five{
+        Width:100%;}
+.five img{
+       Height:140px;}
+   .six{
+        Width:100%;}
+.six img{
+        height:140px;}
+} 
+@media screen and (max-width:1024px){
+      #footer{
+      
+      Margin-top:2rem;
+      Padding:0 2rem;
+}
+ .footer1{
+        Display:flex;}
+}
+
+@media screen and (max-width:766px){
+ 
     .footer1{
         Display:block;
-        
+        Padding: 2rem 0;
 }
 #footer{
       
       Margin-top:2rem;
-      Padding:2rem;
+      Padding:0 2rem;
 }
-
 
 }
