@@ -16,26 +16,26 @@ Padding:0;
       grid-template-columns: 1fr auto auto;
       Column-gap:1rem;
      }
-.reservia{
+.reservia-logo{
 Padding-top:1.5rem;
 }
  
 
-.navi{
+.menu-nav-1{
       Display:flex;
       Align-items:center;
       Justify-content:center;
 }
 
-.ins a:visited{ 
+.hebergement a:visited{ 
       Color:#0065FC;
       
 }
-.navi a{ 
+.menu-nav-1 a{ 
       
       Text-decoration:none;
 }
-.ins{ 
+.hebergement{ 
       Padding-top:2rem;
       Font-weight:100;
       font-size:20px;
@@ -47,7 +47,7 @@ Padding-top:1.5rem;
       Border-top:3px solid #0065FC;
       
 }
-.inss{
+.activites {
       Padding-top:2rem;
       Font-weight:100;
       font-size:20px;
@@ -58,29 +58,29 @@ Padding-top:1.5rem;
       Width:100%;
       
 }
-.inss:hover{
+.activites:hover{
       Border-top:3px solid #0065FC;
       Color:#0065FC;
 }
-.inss a:visited{
+.activites a:visited{
    Color:black;
 }
 
-.navi1{
+.menu-nav-2{
       Display: flex;
     Align-items: center;
     Justify-content: center;
 }   
 
-.insss a:visited {
+.inscrire a:visited {
     Color:#0065FC;
       
 }
-.navi1 a{
+.menu-nav-2 a{
     
     text-decoration: none;
 }
-.insss{
+.inscrire {
       Padding-top:2rem;
       Padding-left:2rem;
       Padding-right:2rem;
@@ -91,7 +91,7 @@ Padding-top:1.5rem;
       Width:100%;
       
 }
-.insss:hover{
+.inscrire:hover{
       Border-top:3px solid #0065FC;;
 }
 #head{
@@ -119,7 +119,7 @@ form{
 Height:51px;
 Display:flex;
 }
-.png{
+.map{
     Display:flex;
     Align-items:center;
     Justify-content:center;
@@ -379,8 +379,8 @@ Width:75%;
 
 .element img{
       Height:8rem;
-      Max-height:100%;
-      Max-width:100%;
+      height:60%;
+      width:100%;
       Object-fit:cover;}
 .element p{
       Font-weight:inherit;
@@ -436,6 +436,7 @@ Width:75%;
 .element11 img{
         Object-fit:cover;
         Width:40%;
+        Height:100%;
 }
 .wax{
        Display:block;
@@ -485,7 +486,8 @@ Width:75%;
       Grid-row:2/7;
 }
 .one img{
-       
+       Width:100%;
+       height:100%;
        Object-fit:cover;
        }
 .one p{
@@ -526,6 +528,7 @@ Width:75%;
        Grid-row: 6/7;
 }
 .three img{
+      Width:100%;
       object-fit:cover;
       Height:166px;
 }
@@ -547,7 +550,9 @@ Width:75%;
      grid-row: 2/7;
 }
 .four img{
-     object-fit:cover;
+       Width:100%;
+       height:100%;
+       object-fit:cover;
 }
 .four p{
      
@@ -566,7 +571,7 @@ Width:75%;
      grid-row: 2/3;
 }
 .five img{
-   
+     Width:100%;
      Height:166px;
      object-fit:cover;
 }
@@ -587,6 +592,8 @@ Width:75%;
      grid-row: 4/7;
 }
 .six img{
+     Width:100%;
+       height:100%;
      Object-fit:cover;
 }
 .six p{
@@ -654,22 +661,22 @@ Width:75%;
             
              Display:grid;
              grid-template-areas: 
-            "Reservia. navi1"
-            "navi navi navi";  
+            "Reservia-logo. menu-nav-2"
+            "menu-nav-1 menu-nav-1 menu-nav-1";  
 } 
-.Resevia{grid-area:Reservia;}
-.navi{grid-area:navi;}
-.navi1{grid-area:navi1;}
+.resevia{grid-area:Reservia;}
+.menu-nav-1{grid-area:menu-nav-1;}
+.menu-nav-2{grid-area:menu-nav-2;}
 #head{
       
       max-Width:100%;
 }
 
-.ins{
+.hebergement{
    Border-top:none !important;
    Border-bottom:3px solid #0065FC;
 }
- .inss{
+ .activites{
 Border-bottom:3px solid #F2F2F2;}
 }
 @media screen  and (max-width:768px)
@@ -825,23 +832,25 @@ Margin-top:-15px;}
  .one{
         Width:30%;}
 .one img{
-       Height:140px;}
+        height:140px;}
 .two{
         Width:30%;}
 .two img{
-       Height:140px;}
+        height:140px;}
  .three{
-        Width:30%;}
-.three img{
-       Height:140px;} 
+    Width:30%}
+  .three img{
+        height:140px;}
+      
+
  .four{
         Width:30%;}
-.four img{
-       Height:140px;}   
+ .four img{
+        height:140px;} 
 .five{
         Width:30%;}
 .five img{
-       Height:140px;}
+        height:140px;}
    .six{
         Width:30%;}
 .six img{
