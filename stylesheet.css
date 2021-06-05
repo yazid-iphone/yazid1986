@@ -2,13 +2,7 @@ Body{
 margin:0;
 Padding:0;
 }
-#main{
-      Background:;
-      Width:95%;
-      Font-weight:inherit;
-      font-family:Raleway  ,sans-serif;
-      Margin:auto;
-}
+
 .title{
       width:100%;
       
@@ -17,6 +11,7 @@ Padding:0;
       Column-gap:1rem;
      }
 .reservia-logo{
+Padding-left:1.5rem;
 Padding-top:1.5rem;
 }
  
@@ -93,6 +88,13 @@ Padding-top:1.5rem;
 }
 .inscrire:hover{
       Border-top:3px solid #0065FC;;
+}
+#main{
+      Background:;
+      Width:95%;
+      Font-weight:inherit;
+      font-family:Raleway  ,sans-serif;
+      Margin:auto;
 }
 #head{
       Width:100%;
@@ -177,10 +179,10 @@ Color:white;
 }
 
 .list{
-Justify-content:space-between;
 Align-items:center;
 Display:flex;
-Width:75%;
+Justify-content:space-between;
+Width:65%;
 }
 
 .element04 h2{
@@ -198,7 +200,7 @@ Width:75%;
     Border:none;
     Background:#deebff;
     Margin:-3px;
-    Margin-right:1rem;
+    
     color: #0065FC;
     Border-radius:50%;
     Height:3.5rem;
@@ -215,101 +217,14 @@ Width:75%;
     Border-radius:50px;
     Height:3.5rem;
     Font-size:1rem;
-    Padding-right:1rem;
+   
     }
 .list1:hover{
      Background:#f2f7ff;
      Transform:scale(1.04);
 }
-.list2 i{
-    Display:flex;
-    Align-items:center;
-    Justify-content:center;
-    Border:none;
-    Background:#deebff;
-    Margin:-3px;
-    Margin-right:1rem;
-    color: #0065FC;
-    Border-radius:50%;
-    Height:3.5rem;
-    Width:3.5rem;
-    
-}
-.list2{
-    
-    Display:flex;
-    Align-items:center;
-    Font-weight:700;
-    Border:solid 2px #d9d9d9;
-    
-    Border-radius:50px;
-    Height:3.5rem;
-    Font-size:1rem;
-    Padding-right:1rem;
-    }
-.list2:hover{
-     Background:#f2f7ff;
-     Transform:scale(1.04);
-}
-.list3 i{
-    Display:flex;
-    Align-items:center;
-    Justify-content:center;
-    Border:none;
-    Background:#deebff;
-    Margin:-3px;
-    Margin-right:1rem;
-    color: #0065FC;
-    Border-radius:50%;
-    Height:3.5rem;
-    Width:3.5rem;
-    
-}
-.list3{
-    
-    Display:flex;
-    Align-items:center;
-    Font-weight:700;
-    Border:solid 2px #d9d9d9;
-    
-    Border-radius:50px;
-    Height:3.5rem;
-    Font-size:1rem;
-    Padding-right:1rem;
-    }
-.list3:hover{
-     Background:#f2f7ff;
-     Transform:scale(1.04);
-}
-.list4 i{
-    Display:flex;
-    Align-items:center;
-    Justify-content:center;
-    Border:none;
-    Background:#deebff;
-    Margin:-3px;
-    Margin-right:1rem;
-    color: #0065FC;
-    Border-radius:50%;
-    Height:3.5rem;
-    Width:3.5rem;
-    
-}
-.list4{
-    
-    Display:flex;
-    Align-items:center;
-    Font-weight:700;
-    Border:solid 2px #d9d9d9;
-    
-    Border-radius:50px;
-    Height:3.5rem;
-    Font-size:1rem;
-    Padding-right:1rem;
-    }
-.list4:hover{
-     Background:#f2f7ff;
-     Transform:scale(1.04);
+.list1 p{
+     Padding:1rem 1rem;
 }
 
 .element05 { 
@@ -328,7 +243,7 @@ Width:75%;
     Color:#0065FC;
     Border:solid 1px #d9d9d9;
     Border-radius:50%;}
-#yazid{
+#container-father{
     
     height:100%;
     width:100%;
@@ -336,25 +251,20 @@ Width:75%;
     column-gap: 2rem;
 }
 
-#container{
+#container-child-1{
      Width:70%;
      border-radius: 1.5rem;
      Background:#F2F2F2;
 }
 
-#container h3{
-     Font-weight:inherit;
-     Display:block;
-     Margin-left:2rem;
-     Font-size:24px;
-}
-#container h3{
-     Font-size:19px;
+#container-child-1 h3{
      Font-weight:500;
      Display:block;
-     Margin:2rem;
+     Margin:1.75rem 1.75rem;
+     Font-size:24px;
 }
-#conteneur{
+
+#container-cd-1{
      
      Width:100%;
      display: flex;
@@ -364,7 +274,7 @@ Width:75%;
      Justify-content:center;
      Align-items:center;
 }
-.element{
+.container-element-1{
      Box-shadow:0 0 16px #0000002e;
      Display:block;
      Border-radius:1.25rem;
@@ -377,23 +287,22 @@ Width:75%;
      Cursor:pointer;}
 
 
-.element img{
+.container-element-1 img{
       Height:8rem;
       height:60%;
       width:100%;
       Object-fit:cover;}
-.element p{
-      Font-weight:inherit;
-      Font-size:18px;
+.container-element-1 p{
+      Font-weight:500;
+      
       Margin:0.25rem 0.75rem 0 0.75rem;}
 .star2{
       Color:#0065FC;
       Margin:0.75rem;}
-.star2 span{
-      Color:#d9d9d9;}
-.element:hover{
+
+.container-element-1:hover{
        Transform:scale(1.02);}
-#yijiao{
+#container-child-2{
        Width:30%;
        Background:#F2F2F2;
        Border-radius:1.5rem;}
@@ -414,7 +323,7 @@ Width:75%;
        Margin-right:2rem;
        Margin-top:1.5rem;
 }
-.elem11{
+.container-cd-2{
        
        Display:flex;
        Flex-direction:column;
@@ -422,7 +331,7 @@ Width:75%;
        Margin:1.5rem;
 }
 
-.element11{
+.container-element-2{
         Box-shadow:0 0 16px #0000002e; 
        
         Border-radius:1.5rem;
@@ -433,7 +342,7 @@ Width:75%;
         Height:150px;
         Border:5px solid #fff;
 }
-.element11 img{
+.container-element-2 img{
         Object-fit:cover;
         Width:40%;
         Height:100%;
@@ -451,22 +360,20 @@ Width:75%;
        Margin-top:3rem;
 
 }
-.star1 span{
-        Color:#d9d9d9;
-}
-.element11:hover{
+
+.container-element-2:hover{
         Transform:scale(1.02);
 }
-.wrapper1{
+.wrapper-father{
         
         Margin:4rem 0;
 }
 
-.wrapper1 h2{
+.wrapper-father h2{
        Font-weight:inherit;
        font-family:Raleway  ,sans-serif;
 }
-.wrapper {
+.wrapper-child {
         width:100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -608,27 +515,24 @@ Width:75%;
      Height:100%;
      Background:#F2F2F2;
 }
-.footer1{
-     Width:100%;
+.footer-cd{
+     Width:70%;
      Display:flex;
      Justify-content:space-between;
-
+     Padding:0 2rem;
 }
 
-.element5{ 
-      Padding-left:2rem;
-      Width:100%;
-} 
-.element5 h3{
+
+.footer-cd-1 h3{
       Font-weight:700;
       Font-size:18:px;     
       font-family:Raleway  ,sans-serif;
 }
-.element5 ul{
+.footer-cd-1 ul{
       Font-weight:200;
       list-Style:none;
 }
-.element5 a{
+.footer-cd-1 a{
      Font-weight:inherit;
      font-family:Raleway  ,sans-serif;
      line-height: 2rem;
@@ -636,13 +540,13 @@ Width:75%;
      Color:#000;
      Margin-left:-40px;
 }
-.element5 a:hover{
+.footer-cd-1 a:hover{
     text-decoration:underline;
 }
 
 @media screen  and (max-width:1024px){ 
       #main{
-        padding:0 2rem;  
+          
         Width:100%;
   } 
     .title{
@@ -650,12 +554,19 @@ Width:75%;
             
              Display:grid;
              Grid-template-columns:1fr auto auto;}  
+#head{
+      Width:95%;
+      Margin:auto;
+}
 } 
 @media screen  and (max-width:766px){ 
     #main{
-        padding:0 2rem;  
+          
         Width:100%;
   }
+    .reservia-logo{
+              Padding-left:1rem;
+}
     .title{
              Width:100%;
             
@@ -669,7 +580,8 @@ Width:75%;
 .menu-nav-2{grid-area:menu-nav-2;}
 #head{
       
-      max-Width:100%;
+      Width:90%;
+      Margin:auto;
 }
 
 .hebergement{
@@ -700,23 +612,45 @@ Border-bottom:3px solid #F2F2F2;}
         Width:100%;
 }
 }
-@media screen  and (max-width:768px){
-    .element04{
-        Width:100%;
-        Display:block;
-        
-        
-  }
+@media screen and (max-width:1024px){
+.element04{
+Display:block;
+}
 .list{
+Column-gap:1rem;
+display:flex;
 Width:100%;
-Flex-flow:wrap;
-Display:flex;
-row-gap:1rem;
+}
+.list1 p{
+Padding:0.5rem 0.5rem;
 }
 }
 
+
+@media screen and (max-width:766px){
+.element04{
+Display:block;
+}
+.list{
+Display:flex;
+Flex-flow:wrap;
+Width:100%;
+row-gap:1rem;
+}
+}
+@media screen and (max-width:1024px){
+    #container-father{
+       
+        display: flex;
+    flex-direction: column-reverse;
+     
+  }
+ 
+}
+
+
 @media screen and (max-width:768px){
-    #yazid{
+    #container-father{
        
         display: flex;
     flex-direction: column-reverse;
@@ -724,25 +658,35 @@ row-gap:1rem;
   }
 }
 
-@media screen and (max-width:768px){
-    #container{
+@media screen and (max-width:1024px){
+    #container-child-1{
         Background:white;
-        Width:100%;
+        Width:95%;
+        Margin:auto;
+        
+  }
+}
+
+@media screen and (max-width:768px){
+    #container-child-1{
+        Background:white;
+        Width:95%;
+        Margin:auto;
         
   }
 }
 @media screen and (max-width:1024px){
-    #conteneur{
+    #container-cd-1{
         Column-gap:1rem;
 Row-gap:1rem;}
-    .element{
+    .container-element-1{
         
         Width:30%;
         
   }
 }
 @media screen and (max-width:766px){
-    .element{
+    .container-element-1{
         
         Width:100%;
         
@@ -750,8 +694,9 @@ Row-gap:1rem;}
 }
 
 @media screen  and (max-width:1024px){
-    #yijiao{
-     Width:100%;
+    #container-child-2{
+     Width:95%;
+     Margin:auto;
      Border-radius:16px;
      
   }
@@ -760,7 +705,7 @@ Row-gap:1rem;}
 }
 
 @media screen  and (max-width:766px){
-    #yijiao{
+    #container-child-2{
      Width:100%;
      Border-radius:0px;
      
@@ -769,17 +714,18 @@ Row-gap:1rem;}
 
 }
 @media screen and (max-width:1024px){
-    .elem11{
+    .container-cd-2{
          Display:flex;
         Flex-direction:row;
         Column-gap:1rem;
         
 }
-.element11{
+.container-element-2{
    display:flex;
    Flex-direction:column;
+   Height:180px;
 }
-.element11 img{
+.container-element-2 img{
      Width:100%;
      Height:50%;
 }
@@ -793,16 +739,16 @@ Margin-top:5px;}
 Margin-top:-15px;}
 } 
 @media screen and (max-width:766px){
-    .elem11{
+    .container-cd-2{
          Display:flex;
         Flex-direction:column;
         
 }
-.element11{
+.container-element-2{
    display:flex;
    Flex-direction:row;
 }
-.element11 img{
+.container-element-2 img{
      Width:40%;
     Height:100%;
 }
@@ -815,20 +761,20 @@ Margin-top:-15px;}
 }
 
 @media screen and  (max-width:1024px){
-   .wrapper1{
-        Margin:0;
+   .wrapper-father{
+        Margin:auto;
         Display:block;
-        Width:100%;
+        Width:95%;
         
        
   }
-    .wrapper{
+    .wrapper-child{
         Display: flex;
     Width: 100%;
     Flex-wrap:wrap;
     Row-gap: 1rem;
 }
-.wrapper1 h2{Padding:0 0 1rem 1rem;}
+.wrapper-father h2{Padding:0 0 1rem 1rem;}
  .one{
         Width:30%;}
 .one img{
@@ -857,18 +803,19 @@ Margin-top:-15px;}
         height:140px;}
 }
  @media screen and (max-width:667px){
-     .wrapper1{
+     .wrapper-father{
         Display:block;
-        Width:100%;
+        Width:90%;
+        Margin:auto;
 }
-    .wrapper{
+    .wrapper-child{
         Row-gap:1rem;
         Margin:0;
         display:flex;
         flex-direction:column;
         Width:100%;
 }
-.wrapper1 h2
+.wrapper-father h2
       {Padding:0 0 1rem 1rem;}
  .one{
         Width:100%;}
@@ -899,22 +846,26 @@ Margin-top:-15px;}
       #footer{
       
       Margin-top:2rem;
-      Padding:0 2rem;
+    
 }
- .footer1{
-        Display:flex;}
+ .footer-cd{
+        Display:flex;
+        Width:80%;
+}
+
 }
 
 @media screen and (max-width:766px){
  
-    .footer1{
+    .footer-cd{
         Display:block;
-        Padding: 2rem 0;
-}
+        Padding:2rem 2rem;
+       }
 #footer{
       
       Margin-top:2rem;
-      Padding:0 2rem;
+     
 }
+
 
 }
